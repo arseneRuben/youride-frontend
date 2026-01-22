@@ -5,6 +5,7 @@ import Step2PassengerInfo from "../components/booking/Step2PassengerInfo";
 import Step3Baggage from "../components/booking/Step3Baggage";
 import Step4Payment from "../components/booking/Step4Payment";
 import Step5Confirm from "../components/booking/Step5Confirm";
+import HeroSection from "../components/common/HeroSection";
 
 const BookingPage = () => {
   const [step, setStep] = useState(1);
@@ -38,25 +39,12 @@ const BookingPage = () => {
   return (
     <div>
       {/* Hero */}
-      <section
-        className="hero-wrap hero-wrap-2 js-fullheight"
-        style={{ backgroundImage: "url(/images/bg_2.jpg)" }}
-      >
-        <div className="overlay"></div>
-        <div className="container">
-          <div className="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-            <div className="col-md-9 ftco-animate pb-1">
-              <p className="breadcrumbs">
-                <span className="mr-2">
-                  <a href="/">Home <i className="ion-ios-arrow-forward"></i></a>
-                </span>
-                <span>Booking <i className="ion-ios-arrow-forward"></i></span>
-              </p>
-              <h1 className="mb-3 bread">Booking</h1>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="Booking"
+        current="Booking"
+        image="/images/car-12.jpg"
+        />
+
 
       {/* Steps */}
       <section className="ftco-section">

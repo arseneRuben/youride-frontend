@@ -21,7 +21,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="ftco-section services-section img">
+    <section className="ftco-section services-section img"  style={{ backgroundImage: ` url(images/bg_2.jpg)` }} >
       <div className="overlay"></div>
       <div className="container">
         <div className="row justify-content-center mb-5">

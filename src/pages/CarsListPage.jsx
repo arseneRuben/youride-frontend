@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { carsData } from "../data/carsData";
 import CarCard from "../components/CarCard";
+import HeroSection from "../components/common/HeroSection";
 
 const CarsListPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -15,25 +16,11 @@ const CarsListPage = () => {
   return (
     <div>
       {/* Hero */}
-      <section
-        className="hero-wrap hero-wrap-2 js-fullheight"
-        style={{ backgroundImage: "url(/images/car-2.jpg)" }}
-      >
-        <div className="overlay"></div>
-        <div className="container">
-          <div className="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-            <div className="col-md-9 ftco-animate pb-5">
-              <p className="breadcrumbs">
-                <span className="mr-2">
-                  <a href="/">Home <i className="ion-ios-arrow-forward"></i></a>
-                </span>
-                <span>Choose Your Car <i className="ion-ios-arrow-forward"></i></span>
-              </p>
-              <h1 className="mb-3 bread">Choose Your Car</h1>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="Car list"
+        current="Car list"
+        image="/images/image_6.jpg"
+        />
 
       {/* Cars list */}
       <section className="ftco-section">

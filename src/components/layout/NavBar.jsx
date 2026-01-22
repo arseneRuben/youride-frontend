@@ -73,6 +73,14 @@ const Navbar = () => {
                 Booking
               </NavLink>
             </li>
+             <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                to="/auth"
+              >
+                Auth
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

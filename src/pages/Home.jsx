@@ -1,5 +1,4 @@
-import Navbar from "../components/layout/NavBar";
-import Footer from "../components/layout/Footer";
+
 import HowItWorks from "../components/home/HowItWorks";
 import Testimonials from "../components/home/Testimonials";
 import AboutSection from "../components/home/AboutSection";
